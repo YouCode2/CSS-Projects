@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+.circle {
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+.globe {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 25, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    animation: globe 4s linear infinite;
+}
+@keyframes globe {
+    0% {
+        transform: rotate(0deg) translate(152px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(152px) rotate(-360deg);
+    }
+}
