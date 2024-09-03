@@ -1,0 +1,26 @@
+.container{
+    display: inline-block;
+}
+p{
+    font-size: 25px;
+    letter-spacing: 5px;
+    word-spacing: -7px;
+    font-family: monospace;
+    border-right: 3px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 2s steps(27) ,
+    cursor .4s step-end infinite alternate ;
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
