@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.profile-card {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 30px;
+    margin: 0 25px;
+    transition: .6s;
+}
+
+.profile-card:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px;
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: .4s;
+    box-shadow: 0 0 5px 1px;
+}
+
+.profile-card:hover .img {
+    transform: translateY(-140px);
+
+}
+
+.profile-card:hover img {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px;
+}
+
+.contents {
+    text-align: center;
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card:hover .contents {
+    opacity: 1;
+}
+
+form input {
+    padding: 7px;
+    margin: 7px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 7px;
+    outline: none;
+}
+
+button {
+    padding: 4px 20px;
+    margin: 7px;
+    background-color: rgb(31, 182, 242);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px gray;
+}
