@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6464d0;
+}
+
+.container {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card {
+    background: url('background.avif');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px;
+    transition: 1.2s;
+}
+
+.container:hover .card {
+    transform: perspective(20px) translateY(-50px) rotateX(2deg);
+}
+
+.bird {
+    background-image: url("bird1.png");
+    background-size: cover;
+    height: 320px;
+    width: 320px;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 1.2s;
+    animation: bird .2s .5s linear infinite;
+    animation-play-state: paused;
+}
+
+.container:hover .bird {
+    animation-play-state: running;
+    transform: translateY(-200px) translateX(-10px);
+}
+
+@keyframes bird {
+    from {
+        background-image: url("bird1.png");
+    }
+
+    to {
+        background-image: url("bird2.png");
+    }
+}
